@@ -175,6 +175,6 @@ def train():
 
 
 if __name__ == "__main__":
-    # show_food("Apple")
+    # show_food("apple")
     # os.environ["CUDA_VISIBLE_DEVICES"] = "0"
     train()
