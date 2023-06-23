@@ -12,7 +12,7 @@ cache/
 mlruns/
 
 # data
-FoodSeg103/
+FoodSeg103*/
 FoodSeg103*.zip
 dataset*.zip
-dataset/
+dataset*/

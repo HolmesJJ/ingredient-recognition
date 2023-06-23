@@ -188,4 +188,7 @@ def train():
 if __name__ == "__main__":
     # show_food("apple")
     # os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-    train()
+    # train()
+    train_data, val_data, test_data = run_data_augmentation()
+    for i, filepath in enumerate(test_data.filepaths):
+        print(filepath)

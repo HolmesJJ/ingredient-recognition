@@ -1,4 +1,5 @@
 import os
+import csv
 import cv2
 import glob
 import random
@@ -7,6 +8,7 @@ import numpy as np
 import pandas as pd
 
 
+CATEGORIES_PATH = "categories.csv"
 CATEGORY_PATH = "FoodSeg103/category_id.txt"
 RAW_DATA_PATH = "FoodSeg103/"
 DATASET_PATH = "dataset/"
@@ -20,6 +22,14 @@ def get_classes():
     classes = categories["name"].to_list()
     classes = [cls.strip() for cls in classes]
     return ids, classes
+
+
+def save_classes():
+    names = sorted(os.listdir(DATASET_PATH + "train"))
+    with open(CATEGORIES_PATH, "w") as f:
+        writer = csv.writer(f)
+        for name in names:
+            writer.writerow([name])
 
 
 def crop_ingredients(indices, dataset, source_folder, target_folder):

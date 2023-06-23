@@ -1,5 +1,13 @@
 # Ingredient Recognition
 
+# Dataset
+
+* [Recipe1M+](http://im2recipe.csail.mit.edu/)
+    * [Ingredients + Image URLs](https://www.kaggle.com/datasets/kmader/layer-urls)
+* [ISIA200](http://123.57.42.89/FoodComputing-Dataset/FoodComputing-ISIA200.html)
+
+## Experiments
+
 | Dataset | Neural Network | Accuracy | Accuracy Top 5 |
 | :----: | :----: | :----: | :----: |
 | FoodSeg103 | [Xception](https://drive.google.com/file/d/1Arh19kfTIld90I101tjuXvsqYmZ3IxDt/view?usp=share_link) | 65.58% | 87.77% |
