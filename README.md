@@ -17,6 +17,7 @@
 * SAM means the the test dataset is segmented by Meta Segment Anything
 
 | Dataset | Neural Network | SAM F-Score | SAM Precision | SAM Recall |
+| :----: | :----: | :----: | :----: | :----: |
 | FoodSeg103 | [DenseNet201](https://drive.google.com/file/d/1xRrqro_ER6QQRTNoXB8crgbXUpKwzx9w/view?usp=share_link) | 36.38% | 49.03% | 32.83% |
 
 ## Categories need to remove or not exist in empower dataset
